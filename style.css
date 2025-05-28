@@ -1,0 +1,40 @@
+body {
+font-family: Arial, sans-serif;
+background-color: gray ;
+background-image:url(fundo\ login.png);
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+margin: 0;
+background-size: cover;
+background-position: 0 0 ;
+
+}
+
+.login {
+    text-align: center;
+    padding: 90px 80px 9px 13px;
+    background-color: rgb(255, 255, 255);
+    font-size: 90%;
+    border-radius: 20px;
+background-size: cover;
+background-position: 0 0;
+
+}
+
+h2 {
+    color: black;
+    text-shadow: 900px solid;
+    padding: 10px 0 0 50px;
+    font-size: 30px;
+    
+}
+
+button:hover{
+background-color: darkgray;
+}
+
+a{
+    background-color: black ;
+}
