@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Panda Store</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/estilos.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+    <link rel="website icon" type="png" href="src/imagens/panda-icon.png">
+  </head>
+  <body>
+    <header class="cabecalho">
+  <img src="src/imagens/logo-panda.png.png" alt="Logo Panda Store" class="logo">
+</header>
+
+    <main class="container">
+      <h1 class="produtos">Produtos</h1>
+      <div class="filtros">
+        <div class="categorias-roupas">
+          <label for="categoria">Categoria</label>
+          <select id="categoria" class="categoria">
+            <option value="">Selecione uma Categoria</option>
+            <option value="camisa">Camisas</option>
+            <option value="calcas">Calças</option>
+            <option value="sapatos">Sapatos</option>
+          </select>
+        </div>
+        <div class="preco-roupas">
+          <label for="preco">Preço máximo (R$)</label>
+          <input type="text" id="preco" class="preco" placeholder="Ex: 150" />
+        </div>
+        <button class="btn-filtrar">Aplicar filtros</button>
+      </div>
+      <ul class="roupas">
+        <li class="roupa" data-categoria="sapatos" data-preco="250">
+          <img src="./src/imagens/tenis-branco.png" alt="" />
+
+          <div class="informacoes">
+            <h2 class="nome-roupa">Tenis Branco</h2>
+            <span class="categoria">Categoria: Sapatos</span>
+            <span class="preco">R$ 249,99</span>
+            <a href="http://wa.me/55519999999?text=Olá, quero comprar o Tenis Branco!" class="btn-comprar" target="_blank">Comprar</a>
+          </div>
+        </li>
+
+        <li class="roupa" data-categoria="sapatos" data-preco="220">
+          <img src="./src/imagens/tenis-preto.png" alt="tenis-preto" />
+          <div class="informacoes">
+            <h2 class="nome-roupa">Tenis Preto</h2>
+            <span class="categoria">Categoria: Sapatos</span>
+            <span class="preco">R$ 219,99</span>
+            <a href="http://wa.me/55519999999?text=Olá, quero comprar o Tenis Preto!" class="btn-comprar" target="_blank">Comprar</a>
+          </div>
+        </li>
+
+        <li class="roupa" data-categoria="camisas" data-preco="200">
+          <img src="./src/imagens/camisa-polo-preta.png" alt="camisa-polo-preta" />
+          <div class="informacoes">
+            <h2 class="nome-roupa">Camisa Polo Preta</h2>
+            <span class="categoria">Categoria: Camisa</span>
+            <span class="preco">R$ 199,99</span>
+            <a href="http://wa.me/55519999999?text=Olá, quero comprar a Camisa Polo Preta!" class="btn-comprar" target="_blank">Comprar</a>
+          </div>
+        </li>
+
+        <li class="roupa" data-categoria="Calcas" data-preco="150">
+          <img src="./src/imagens/calça-jeans-azul.png" alt="Calça" />
+          <div class="informacoes">
+            <h2 class="nome-roupa">Calça Jeans Azul</h2>
+            <span class="categoria">Categoria: Calças</span>
+            <span class="preco">R$ 150,00</span>
+            <a href="http://wa.me/55519999999?text=Olá, quero comprar a calça-jeans-azul" class="btn-comprar" target="_blank">Comprar</a>
+          </div>
+        </li>
+
+        <li class="roupa" data-categoria="Camisas" data-preco="150">
+          <img src="./src/imagens/camisa-polo-branca.png" alt="camisa-polo-branca" />
+          <div class="informacoes">
+            <h2 class="nome-roupa">Camisa Polo Branca</h2>
+            <span class="categoria">Categoria: Camisas</span>
+            <span class="preco">R$ 149,99</span>
+            <a href="http://wa.me/55519999999?text=Olá, quero comprar a Camisa Polo Branca!" class="btn-comprar" target="_blank">Comprar</a>
+          </div>
+        </li>
+
+        <li class="roupa" data-categoria="Calças" data-preco="120">
+          <img src="./src/imagens/calça-jeans-preta.png" alt="Calça Jeans Preta" />
+          <div class="informacoes">
+            <h2 class="nome-roupa">Calça Jeans Preta</h2>
+            <span class="categoria">Categoria: Calças</span>
+            <span class="preco">R$ 119,99</span>
+            <a href="http://wa.me/55519999999?text=Olá, quero comprar a Calça Jeans Preta!" class="btn-comprar" target="_blank">Comprar</a>
+          </div>
+        </li>
+      </ul>
+    </main>
+    <footer class="rodape">@2025 - Todos os direitos reservados</footer>
+    <script src="./src/js/index.js"></script>
+  </body>
+</html>
