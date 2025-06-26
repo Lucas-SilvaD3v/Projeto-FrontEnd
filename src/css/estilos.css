@@ -3,7 +3,7 @@ body {
 }
 
 .cabecalho {
-  background-color: #f2eefa;
+  background-color: #ededed;
   padding: 20px 0;
   text-align: center;
 }
@@ -101,12 +101,16 @@ body {
 	background-color: #ededed;
 	color: #0e0027;
 	border-radius: 20px;
-	box-shadow: 0 6px 12px rgb(0, 0, 0, 0.2);
+	box-shadow: 6px 6px 12px rgb(0, 0, 0, 0.2);
 }
 
 .container .roupa img {
-	width: 100%;
-	padding: 20px;
+	width: 79%;
+	padding: 10px;
+	margin-left: 40px;
+	height: 67%;
+	object-fit: contain;
+	overflow: hidden;
 }
 
 .container .roupa .informacoes {
@@ -168,3 +172,4 @@ body {
 .mostrar {
 	display: block;
 }
+

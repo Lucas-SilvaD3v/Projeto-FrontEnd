@@ -1,5 +1,5 @@
 /*
-  O que precisamos fazer? - Quando o usuário clicar no botão "Aplicar filtros", vamos filtrar as roupass baseado na categoria e no preço máximo selecionados
+  O que precisamos fazer? - Quando o usuário clicar no botão "Aplicar filtros", vamos filtrar as roupas baseado na categoria e no preço máximo selecionados
     OBJETIVO 1 - Criar a funcionalidade de filtrar as roupas
         passo 1 - pegar o botao de aplicar filtros do HTML e mandar pro JS
         passo 2 - escutar o clique no botão de aplicar filtros
@@ -17,7 +17,7 @@ botaoFiltrar.addEventListener("click", function () {
   const precoMaximoSelecionado = document.querySelector("#preco").value;
 
   // passo 4 - para cada roupa, verificar se ela deve ser mostrada ou escondida baseado nos filtros que a pessoa digitou
-  const roupass = document.querySelectorAll(".roupa");
+  const roupas = document.querySelectorAll(".roupa");
 
   roupas.forEach(function (roupa) {
     const categoriaRoupa = roupa.dataset.categoria;
